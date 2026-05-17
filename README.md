@@ -121,4 +121,12 @@ Please keep contributions focused. This is a small tool by design.
 This extension is provided "as is" with no guarantees. It modifies outgoing messages on AI chat platforms. The directive content is appended to your messages and visible to the AI service in the same way any other user message is. Use of this extension is at your own discretion and responsibility. The author makes no claims about how each AI provider's terms of service interact with user-side message customization.
 
 ---
-> Companion to the Unhooked guide — a $9 system for digital wellness with AI, written for ADHD, OCD, and heavy AI users.
+## Support the Project
+
+If this tool saved you hours of compulsive screen time, consider supporting its development:
+
+*   **Option A: Get the Complete System ($9)**
+    The extension is free, but the code is only half the battle. If you want the full behavioral methodology — including pre-chat check-ins, weekly review templates, and the framework to separate information-seeking from emotional-seeking — purchase the companion guide here: gumroad.com/products/ekmzha
+    
+*   **Option B: Buy Me a Coffee**
+    If you only want the technical tool but wish to support ongoing maintenance (updating CSS selectors when AI platforms break the extension), you can drop a tip here: buymeacoffee.com/AI.ADHD
