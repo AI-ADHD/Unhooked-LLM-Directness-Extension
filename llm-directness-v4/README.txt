@@ -1,56 +1,51 @@
 LLM DIRECTNESS MODE - v4
 =========================
 
-NUEVO EN ESTA VERSION:
-1. Inyeccion INVISIBLE en el chat (se oculta visualmente despues de enviar)
-2. Boton para auto-configurar ChatGPT Custom Instructions
-3. Boton para auto-configurar Gemini Gem
-4. Toggle ON/OFF de la inyeccion automatica
-5. Boton para copiar directiva (Claude, configuracion manual)
+NEW IN THIS VERSION:
+1. INVISIBLE chat injection (visually hidden after sending)
+2. Auto-configure button for ChatGPT Custom Instructions
+3. Auto-configure button for Gemini Gem
+4. ON/OFF toggle for automatic injection
+5. Copy directive button (for Claude, manual configuration)
 
-INSTALACION
+INSTALLATION
 -----------
-1. chrome://extensions/ → quitar versiones anteriores (v1, v2, v3)
-2. Descomprimir el ZIP en el Escritorio
-3. chrome://extensions/ → "Cargar descomprimida" → carpeta llm-directness-v4
-4. RECARGAR las pestañas de los LLMs con Ctrl+F5
+1. Go to chrome://extensions/ → remove previous versions (v1, v2, v3)
+2. Unzip the ZIP file onto your Desktop
+3. Go to chrome://extensions/ → click "Load unpacked" → select the llm-directness-v4 folder
+4. REFRESH your active LLM tabs using Ctrl+F5
 
-USO BASICO
-----------
-1. Click en el icono de la extension en la barra de Chrome
-2. Para configurar Custom Instructions de UNA VEZ:
-   - Click "Setup ChatGPT Custom Instructions" → se abre una pestaña, intenta rellenar, verifica que se guardo
-   - Click "Setup Gemini Gem" → igual
-   - Para Claude: click "Copiar directiva" y pega manualmente en Settings → Profile → Personalization
-3. El toggle "Inyeccion automatica" controla si se sigue inyectando en el chat
-   - Si configuraste Custom Instructions, puedes DESACTIVAR la inyeccion (es redundante)
-   - Si no, dejalo activado
-
-COMPORTAMIENTO POR SITIO
-------------------------
-✓ DeepSeek: inyeccion funciona, oculta visualmente
-✓ ChatGPT: inyeccion + Custom Instructions (recomendado: solo Custom Instructions)
-~ Claude: inyeccion parcial. Mejor copiar directiva y pegar manualmente
-~ Gemini: inyeccion + Gem (recomendado: usar el Gem)
-? Perplexity, Grok, Copilot, Meta AI: solo inyeccion, no probados
-
-LIMITACIONES HONESTAS
----------------------
-- El autofill de ChatGPT y Gemini puede fallar si actualizan su UI.
-  Si falla, el script copia la directiva al portapapeles para que la
-  pegues manualmente.
-- La "invisibilidad" en el chat es solo visual. El texto SI se envia
-  al servidor (sino, no funcionaria). Si recargas la conversacion,
-  el texto puede volver a aparecer.
-- Ningun modelo obedece la directiva al 100%. RLHF entrena cortesia
-  a nivel profundo y un prompt solo la REDUCE, no la elimina.
-- Para CONTROL TOTAL, lo mas efectivo es: configurar Custom Instructions
-  en ChatGPT, crear Gem en Gemini, Project Instructions en Claude.
-  La extension solo es util para sitios sin estas funciones.
-
-DIAGNOSTICO
+BASIC USAGE
 -----------
-Si algo falla, abre la consola (F12 → Console) y busca mensajes [LLM-Direct].
-El indicador inferior derecho muestra:
-- "ON | I:X | J:Y" — extension activa, X intercepts, Y injections
+1. Click the extension icon in the Chrome toolbar.
+2. To configure Custom Instructions PERMANENTLY:
+   - Click "Setup ChatGPT Custom Instructions" → a new tab will open, auto-fill will trigger, verify that it saved.
+   - Click "Setup Gemini Gem" → identical workflow.
+   - For Claude: click "Copy directive" and paste it manually into Settings → Profile → Personalization.
+3. The "Automatic injection" toggle controls ongoing chat injections:
+   - If you configured Custom Instructions, you can DISABLE the injection toggle (it becomes redundant).
+   - If not, keep it enabled.
+
+PLATFORM BEHAVIOR
+-----------------
+✓ DeepSeek: injection functional, visually hidden
+✓ ChatGPT: injection + Custom Instructions (recommended: Custom Instructions only)
+~ Claude: partial injection. Best practice: copy directive and paste manually
+~ Gemini: injection + Gem (recommended: use the Gem)
+? Perplexity, Grok, Copilot, Meta AI: injection only, untested
+
+HONEST LIMITATIONS
+------------------
+- The auto-fill feature for ChatGPT and Gemini may break if they update their UI. 
+  If it fails, the script copies the directive to your clipboard as a fallback for manual pasting.
+- The chat "invisibility" feature is strictly cosmetic. The text IS sent to the server (otherwise, it would not work). If you reload the conversation, the text may reappear briefly.
+- No model obeys the directive 100% of the time. RLHF deeply reinforces politeness training; a prompt only REDUCES it, it does not eliminate it.
+- For MAXIMUM CONTROL, the most effective workflow is: configure Custom Instructions in ChatGPT, create a Gem in Gemini, and setup Project Instructions in Claude. The extension's injection feature is primarily useful for sites lacking these native options.
+
+DIAGNOSTICS
+-----------
+If an issue occurs, open the developer console (F12 → Console) and look for [LLM-Direct] logs.
+The bottom-right indicator status means:
+- "ON | I:X | J:Y" — extension active, X intercepts, Y injections
+- Yellow color = at least one successful injection completed
 - Amarillo = al menos una inyeccion exitosa
