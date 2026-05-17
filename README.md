@@ -94,7 +94,7 @@ The full source code is in this repository and can be audited freely.
 
 This tool exists to help people, not to be a moat. If a 50-line script can reduce someone's compulsive AI usage, that script should be free. Anyone can fork, modify, redistribute, or learn from this code.
 
-If you want a structured methodology — pre-chat check-ins, weekly review templates, the framework for distinguishing information-seeking from emotional-seeking, plus polished installation guides with screenshots — that's available as a paid companion guide at `[UNDER CONSTRUCTION]`. The guide is how this project sustains development. The tool itself stays free forever.
+If you want a structured methodology — pre-chat check-ins, weekly review templates, the framework for distinguishing information-seeking from emotional-seeking, plus polished installation guides with screenshots — that's available as a paid companion guide at gumroad.com/products/ekmzha The guide is how this project sustains development. The tool itself stays free forever.
 
 ---
 
